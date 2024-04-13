@@ -18,7 +18,18 @@ func _ready():
 	print(person)
 	for i in person:
 		print(i)
+	#calling say hello function;
+	say_hello("SAAMI")
+	print(add_num(10,40));
+	
 	
 func _process(delta):
 	#print("Delta : ",delta)
 	pass
+#making a function
+func say_hello(player_name: String) -> void:
+	print("Hello, "+ player_name+", welcome!")
+
+func add_num(a:int,b:int) -> int:
+	var sum = a+b;
+	return sum
